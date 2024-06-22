@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.1">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="FileName">C:\Users\Aish\OneDrive\Desktop\Spring 23\DABI\MIDTERM PROJECT\Food_Facility_Inspections.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine />
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>True</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>True</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Food_Facility_Inspections.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="BusinessId" size="254" source="File: C:\Users\Aish\OneDrive\Desktop\Spring 23\DABI\MIDTERM PROJECT\Food_Facility_Inspections.csv" type="V_String" />
+            <Field name="Name" size="254" source="File: C:\Users\Aish\OneDrive\Desktop\Spring 23\DABI\MIDTERM PROJECT\Food_Facility_Inspections.csv" type="V_String" />
+            <Field name="Address" size="254" source="File: C:\Users\Aish\OneDrive\Desktop\Spring 23\DABI\MIDTERM PROJECT\Food_Facility_Inspections.csv" type="V_String" />
+            <Field name="City" size="254" source="File: C:\Users\Aish\OneDrive\Desktop\Spring 23\DABI\MIDTERM PROJECT\Food_Facility_Inspections.csv" type="V_String" />
+            <Field name="State" size="254" source="File: C:\Users\Aish\OneDrive\Desktop\Spring 23\DABI\MIDTERM PROJECT\Food_Facility_Inspections.csv" type="V_String" />
+            <Field name="ZipCode" size="254" source="File: C:\Users\Aish\OneDrive\Desktop\Spring 23\DABI\MIDTERM PROJECT\Food_Facility_Inspections.csv" type="V_String" />
+            <Field name="PhoneNumber" size="254" source="File: C:\Users\Aish\OneDrive\Desktop\Spring 23\DABI\MIDTERM PROJECT\Food_Facility_Inspections.csv" type="V_String" />
+            <Field name="InspectionId" size="254" source="File: C:\Users\Aish\OneDrive\Desktop\Spring 23\DABI\MIDTERM PROJECT\Food_Facility_Inspections.csv" type="V_String" />
+            <Field name="Date" size="254" source="File: C:\Users\Aish\OneDrive\Desktop\Spring 23\DABI\MIDTERM PROJECT\Food_Facility_Inspections.csv" type="V_String" />
+            <Field name="InspectionType" size="254" source="File: C:\Users\Aish\OneDrive\Desktop\Spring 23\DABI\MIDTERM PROJECT\Food_Facility_Inspections.csv" type="V_String" />
+            <Field name="ViolationCodes" size="254" source="File: C:\Users\Aish\OneDrive\Desktop\Spring 23\DABI\MIDTERM PROJECT\Food_Facility_Inspections.csv" type="V_String" />
+            <Field name="ViolationDescriptions" size="254" source="File: C:\Users\Aish\OneDrive\Desktop\Spring 23\DABI\MIDTERM PROJECT\Food_Facility_Inspections.csv" type="V_String" />
+            <Field name="Location" size="254" source="File: C:\Users\Aish\OneDrive\Desktop\Spring 23\DABI\MIDTERM PROJECT\Food_Facility_Inspections.csv" type="V_String" />
+            <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="354" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Aish\AppData\Local\Temp\Engine_49072_c06e4628ab35ca4980ed9a711df118e2_\Engine_49072_dc9f1e577ae0834cb045f989ee8eaf53~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>alteryx_prof_Lakshmi_GayatriAishwarya_Adduri_midterm</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="e9a7ff16-1d0c-4126-8a60-c89f5a5dc12b" />
+      <Telemetry>
+        <PreviousWorkflowId value="f1431b9f-97d6-4b0e-aa21-84a45593a2df" />
+        <OriginWorkflowId value="f1431b9f-97d6-4b0e-aa21-84a45593a2df" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
